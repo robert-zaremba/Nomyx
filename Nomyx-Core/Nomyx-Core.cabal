@@ -1,5 +1,5 @@
 name: Nomyx-Core
-version: 0.5.0
+version: 0.5.1
 cabal-version: >=1.6
 build-type: Simple
 license: BSD3
@@ -13,9 +13,9 @@ extra-source-files: AUTHORS README TODO
 data-files: test/*.hs
             test/more/*.hs
 data-dir: data
- 
-library 
-    build-depends: Nomyx-Language         == 0.5.0,
+
+library
+    build-depends: Nomyx-Language         == 0.5.1,
                    DebugTraceHelpers      == 0.12.*,
                    MissingH               == 1.2.*,
                    acid-state             == 0.12.*,
@@ -77,7 +77,7 @@ library
                      Nomyx.Core.Engine.Utils
                      Paths_Nomyx_Core
     ghc-options: -W -threaded
- 
+
 source-repository head
   type:              git
   location:          https://github.com/cdupont/Nomyx-Core.git

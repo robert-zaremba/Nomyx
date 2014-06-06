@@ -1,5 +1,5 @@
 name: Nomyx-Web
-version: 0.5.0
+version: 0.5.1
 cabal-version: >=1.6
 build-type: Simple
 license: BSD3
@@ -9,15 +9,15 @@ synopsis: Web gui for Nomyx
 category: game
 Homepage: http://www.nomyx.net
 author: Corentin Dupont
-data-files: static/css/nomyx.css 
+data-files: static/css/nomyx.css
             static/nomyx.js
             static/pictures/*.jpg
 data-dir: data
 extra-source-files: README.md
- 
+
 library
-    build-depends: Nomyx-Language         == 0.5.0,
-                   Nomyx-Core             == 0.5.0,
+    build-depends: Nomyx-Language         == 0.5.1,
+                   Nomyx-Core             == 0.5.1,
                    base                   == 4.6.*,
                    blaze-html             == 0.7.*,
                    blaze-markup           == 0.6.*,
@@ -54,7 +54,7 @@ library
                    Nomyx.Web.Login
                    Nomyx.Web.Settings
     ghc-options: -W -threaded
- 
+
 source-repository head
   type:              git
   location:          https://github.com/cdupont/Nomyx-Web.git
